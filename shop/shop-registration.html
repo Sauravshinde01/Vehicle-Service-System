@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Registration </title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+        <body id="shop-reg-body">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:#DAEEDC;">
+  
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" style="color: black;" href="shop.html">Home <span class="sr-only">(current)</span></a>
+                    <!-- <a class="nav-item nav-link" style="color: black;" href="#services">Services</a> -->
+                    <!-- <a class="nav-item nav-link" style="color: black;" href="#map">Location</a> -->
+                    <a class="nav-item nav-link" style="color: black;" href="shop-registration.html">Registration</a>
+                    <!-- <a class="nav-item nav-link" style="color: black;" href="#">How-it-Works</a> -->
+                    <!-- <a class="nav-item nav-link" style="color: black;" href="#">Contacts</a> -->
+                  </div>
+                </div>
+              </nav>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-6">
+                    <form id="reg-shop" method="POST" action="shop-reg.php">
+                      <h1 id="form-heading" style="margin-top: 0%;">Registration Form</h1>
+                      <div class="mt-2">
+                        <h5 style="font-family: Alegreya Sans SC;font-weight: bold;">Owner's Details</h5>
+                        <label for="InputFullName" class="form-label">Full Name<span class="star">*</span></label>
+                              <input type="text" class="form-control" id="fullname" name="fullname"
+                              placeholder="Enter Full Name" required>
+                          </div>
+                          <!-- <div class="mt-3">
+                            <label for="InputLastName" class="form-label">Last Name<span class="star">*</span></label>
+                            <input type="text" class="form-control" id="InputLastName" name="last_name" required>
+                          </div> -->
+                          <!-- 
+                          
+                          <div class="mt-3">
+                            <label for="InputConfirmPassword" class="form-label">Confirm Password<span class="star">*</span></label>
+                            <input type="password" class="form-control" id="InputConfirmPassword" name="cpassword" required>
+                          </div> -->
+                        <div class="mt-3">
+                            <label for="InputMobileNumber" class="form-label">Mobile Number<span class="star">*</span></label>
+                            <input type="text" class="form-control" id="InputMobileNumber" name="mobile_num" 
+                            placeholder="Enter Mobile Number" required>
+                          </div>
+                          <div class="mt-3">
+                            <label for="InputAadharNumber" class="form-label">Aadhar Number<span class="star">*</span></label>
+                            <input type="text" class="form-control" id="InputAAdharNumber" name="aadhar_num"
+                            placeholder="Enter Aadhar Number" required>
+                          </div>
+                          <div class="mt-3">
+                            <label for="InputEmail" class="form-label">Email<span class="star">*</span></label>
+                            <input type="email" class="form-control" id="InputEmail" name="email"
+                            placeholder="Enter Email" required>
+                          </div>
+                          <div class="mt-3">
+                            <label for="InputPassword" class="form-label">Password<span class="star">*</span></label>
+                            <input type="password" class="form-control" id="InputPassword" name="password" required>
+                          </div>
+                          <div class="mt-3">
+                            <label for="InputBirthdate" class="form-label">Birth Date<span class="star">*</span></label>
+                            <input type="date" class="form-control" id="InputBirthdate" name="birthdate"
+                             required>
+                          </div>
+                          <div class="form-group mt-3">
+                        <label for="exampleFormControlSelect1">Gender<span class="star">*</span></label>
+                        <select class="form-control" id="vehicle-type" name="gender" required>
+                          <option>Female</option>
+                          <option>Male</option>
+                          <option>Other</option>
+                        </select>
+                        </div>
+                        <div>
+                          <label for="InputState" class="form-label">State<span class="star">*</span></label>
+                          <input type="text" class="form-control" id="owner_state" name="owner_state"
+                          placeholder="Enter State" required>
+                        </div>
+                        <div class="mt-3">
+                          <label for="InputCity" class="form-label">City<span class="star">*</span></label>
+                          <input type="text" class="form-control" id="owner_city" name="owner_city"
+                          placeholder="Enter City" required>
+                        </div>
+                        <div class="mt-3">
+                          <label for="InputAddress" class="form-label">Address<span class="star">*</span></label>
+                          <input type="text" class="form-control" id="owner_address" name="owner_address"
+                          placeholder="Enter Address" required>
+                        </div>
+                      <div class="form-group">
+                          <label for="inputPinCode" class="form-label">Pin Code<span class="star">*</span></label>
+                          <input type="text" class="form-control" id="owner_pincode" name="owner_pincode" 
+                          placeholder="Enter Pin Code" required>
+                        </div>
+                        <div class="mt-2">
+                          <h5 style="font-family: Alegreya Sans SC;font-weight: bold;">Shop Details</h5>
+                          <label for="InputFullName" class="form-label">Name of Service Station<span class="star">*</span></label>
+                                <input type="text" class="form-control" id="InputFullName" name="shopname"
+                                placeholder="Enter Name" required>
+                            </div>
+                            <div class="form-group mt-3">
+                              <label for="inputPinCode" class="form-label">License Number<span class="star">*</span></label>
+                              <input type="text" class="form-control" id="license" name="license" 
+                              placeholder="Enter License Number" required>
+                            </div>
+                            <div class="mt-3">
+                              <label for="InputAddress" class="form-label">Full Address of Service Station<span class="star">*</span></label>
+                              <input type="text" class="form-control" id="address" name="address"
+                              placeholder="Enter Address" required>
+                            </div>
+                            
+                            <div class="form-group mt-3">
+                          <label for="exampleFormControlSelect1">Ownership of Premises<span class="star">*</span></label>
+                          <select class="form-control" id="ownership" name="ownership" required>
+                            <option>Self Owned</option>
+                            <option>Rented</option> 
+                          </select>
+                          </div>
+                          <div>
+                            <label for="InputState" class="form-label">State<span class="star">*</span></label>
+                            <input type="text" class="form-control" id="InputState" name="state"
+                            placeholder="Enter State" required>
+                          </div>
+                          <div class="mt-3">
+                            <label for="InputCity" class="form-label">City<span class="star">*</span></label>
+                            <input type="text" class="form-control" id="InputCity" name="city"
+                            placeholder="Enter City" required>
+                          </div>
+                          
+                        <div class="form-group mt-3">
+                            <label for="inputPinCode" class="form-label">Pin Code<span class="star">*</span></label>
+                            <input type="text" class="form-control" id="inputpincode" name="pincode" 
+                            placeholder="Enter Pin Code" required>
+                          </div>
+                        <button type="submit" name="submit" class="btn btn-primary mt-3" id="submit" style="margin-bottom:20px;">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </body>
+</head>
+</html>

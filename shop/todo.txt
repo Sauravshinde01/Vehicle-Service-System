@@ -1,0 +1,5 @@
+select b.bill_id, b.cust_email, b.license_number, b.date, b.total_cost, s.service,
+ s.cost FROM bill_tab b INNER JOIN services s ON b.bill_id = s.bill_id WHERE 
+ b.cust_email='greatlife@gmail.com';
+ <optional > and  b.cust_email = id 
+ (To show bill history of customer option if required use sort by method wrt date in query)
